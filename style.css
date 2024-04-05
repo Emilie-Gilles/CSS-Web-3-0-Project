@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.containeur {
+  width: 90vw;
+  margin: 0 auto;
+}
 
 body {
-  margin: 20px;
   font-family: "Inter", sans-serif;
 }
 
@@ -98,22 +101,27 @@ hr {
   margin: 30px 0;
 }
 
-main {
+main .containeur {
   display: flex;
   flex-direction: column;
-  max-width: 1110px;
-  margin: 0 auto;
-}
-header {
-  margin: 0 auto;
+  gap: 20px;
   max-width: 1110px;
 }
-section {
-  margin: 10px 0;
+header .containeur {
+  max-width: 1110px;
 }
-.section1 {
-  width: max(60%, 343px);
+section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+.section0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 #img1 {
   width: 100%;
   height: 100%;
@@ -221,6 +229,12 @@ section {
     gap: 20px;
     flex-wrap: wrap;
   }
+  .section0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
   .section1 {
     min-width: 60%;
   }
@@ -253,14 +267,7 @@ section {
     width: clamp(250px, 30vw, 350px);
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1109px) {
-  main {
-    margin: 0 10vw;
-  }
-  header {
-    margin: 0 10vw;
-  }
-}
+
 @media screen and (min-width: 1440px) {
   .section1 {
     min-width: 60%;
