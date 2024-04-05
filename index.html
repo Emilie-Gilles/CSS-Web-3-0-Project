@@ -21,8 +21,8 @@
     />
   </head>
   <body>
-    <header>
-      <div class="containeur">
+    <div class="container">
+      <header>
         <nav>
           <img id="logo" src="assets/images/logo.svg" alt="logo" />
 
@@ -30,7 +30,7 @@
           <label for="hamburger">
             <img src="assets/images/icon-menu.svg" alt="icon-menu" />
           </label>
-          <ul class="header__nav__navBar">
+          <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Popular</a></li>
@@ -38,34 +38,32 @@
             <li><a href="#">Categories</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <div class="containeur">
-        <section class="section0">
-          <section class="section1">
-            <div class="section1__img">
+      <main>
+        <section class="section1">
+          <section class="section1__main">
+            <div class="section1__main__img">
               <img
                 id="img1"
                 src="assets/images/image-web-3-desktop.jpg"
                 alt="image-web-3-desktop"
               />
             </div>
-
-            <article class="section1__text">
+            <div class="section1__main__title">
               <h1>The Bright Future of Web 3.0?</h1>
-              <div class="section1__text__content">
-                <p>
-                  We dive into the next evolution of the web that claims to put
-                  the power of the platforms back into the hands of the people.
-                  But is it really fulfilling its promise?
-                </p>
-                <div class="section1__text__btn"><a href="#">Read more</a></div>
-              </div>
-            </article>
+            </div>
+            <div class="section1__main__content">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button><a href="#">Read more</a></button>
+            </div>
           </section>
-          <section class="section2">
+
+          <section class="section1__new">
             <h5>New</h5>
             <article>
               <h2>Hydrogen VS Electric Cars</h2>
@@ -92,49 +90,54 @@
           </section>
         </section>
 
-        <section class="section3">
-          <article>
-            <a href="#" class="section3__article">
-              <img
-                src="assets/images/image-retro-pcs.jpg"
-                alt="image-retro-pcs"
-              />
-              <div class="section3__article__text">
-                <div class="section3__article__text__number">01</div>
-                <h3>Reviving Retro PCs</h3>
-                <p>What happens when old PCs are given modern upgrades?</p>
-              </div>
+        <ul class="section2">
+          <li>
+            <a href="#" class="section2__article">
+              <article>
+                <img
+                  src="assets/images/image-retro-pcs.jpg"
+                  alt="image-retro-pcs"
+                />
+                <div class="section2__article__text">
+                  <div class="section2__article__text__number">01</div>
+                  <h3>Reviving Retro PCs</h3>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </article>
             </a>
-          </article>
-
-          <article>
-            <a href="#" class="section3__article">
-              <img
-                src="assets/images/image-top-laptops.jpg"
-                alt="image-top-laptops"
-              />
-              <div class="section3__article__text">
-                <div class="section3__article__text__number">02</div>
-                <h3>Top 10 Laptops of 2022</h3>
-                <p>Our best picks for various needs and budgets.</p>
-              </div>
+          </li>
+          <li>
+            <a href="#" class="section2__article">
+              <article>
+                <img
+                  src="assets/images/image-top-laptops.jpg"
+                  alt="image-top-laptops"
+                />
+                <div class="section2__article__text">
+                  <div class="section2__article__text__number">02</div>
+                  <h3>Top 10 Laptops of 2022</h3>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
+              </article>
             </a>
-          </article>
-          <article>
-            <a href="#" class="section3__article">
-              <img
-                src="assets/images/image-gaming-growth.jpg"
-                alt="image-gaming-growth"
-              />
-              <div class="section3__article__text">
-                <div class="section3__article__text__number">03</div>
-                <h3>The Growth of Gaming</h3>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-              </div>
+          </li>
+          <li>
+            <a href="#" class="section2__article">
+              <article>
+                <img
+                  src="assets/images/image-gaming-growth.jpg"
+                  alt="image-gaming-growth"
+                />
+                <div class="section2__article__text">
+                  <div class="section2__article__text__number">03</div>
+                  <h3>The Growth of Gaming</h3>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </article>
             </a>
-          </article>
-        </section>
-      </div>
-    </main>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>
